@@ -6,6 +6,7 @@ import Banner from '../Components/Banner';
 import Brands from '../Components/Brands';
 import Reviews from '../Components/Reviews';
 import Priority from '../Components/Priority';
+import FAQ from '../Components/FAQ';
 
 const reviewsPromise = fetch('/reviews.json').then(res=>res.json())
 
@@ -35,6 +36,9 @@ const Home = () => {
                         </section>
                         <section>
                             <Reviews reviewsPromise={reviewsPromise}/>
+                        </section>
+                        <section>
+                            <FAQ/>
                         </section>
 
             
